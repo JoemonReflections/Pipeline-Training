@@ -16,19 +16,20 @@ pipeline {
         echo 'Testing the application from dev branch'
       }   
     }
-stage ("Deploy"){
-      steps{
-        echo 'Deploing the application in dev branch'
-      } 
-stage ("Internal"){
-      steps{
-        echo 'Internal Deploing the application in dev branch'
-      } 
-
-stage ("Staging"){
-      steps{
-        echo 'Staging Deploing the application in dev branch'
-      } 
+    stage ("Deploy"){
+          steps{
+            echo 'Deploing the application in dev branch'
+          }
+    }
+    stage ("Internal"){
+          steps{
+            echo 'Internal Deploing the application in dev branch'
+          } 
+    }
+    stage ("Staging"){
+          steps{
+            echo 'Staging Deploing the application in dev branch'
+          } 
 }
 }
 }
