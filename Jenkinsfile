@@ -29,7 +29,16 @@ pipeline {
     stage ("Staging"){
           steps{
             echo 'Staging Deploing the application in dev branch'
+
           } 
+    }
+    stage ("Push Notification"){
+          steps{
+            echo 'Pushing Noti to Dev Branch'
+
+          } 
+    }
+
 }
 }
-}
+
