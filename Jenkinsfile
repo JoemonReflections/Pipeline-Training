@@ -17,26 +17,26 @@ pipeline {
       }   
     }
     stage ("Deploy"){
-          steps{
-            echo 'Deploing the application in dev branch'
-          }
+      steps{
+        echo 'Deploing the application in dev branch'
+      }
     }
     stage ("Internal"){
-          steps{
-            echo 'Internal Deploing the application in dev branch'
-          } 
+      steps{
+        echo 'Internal Deploing the application in dev branch'
+      } 
     }
     stage ("Staging"){
-          steps{
-            echo 'Staging Deploing the application in dev branch'
+      steps{
+        echo 'Staging Deploing the application in dev branch'
 
-          } 
+      } 
     }
     stage ("Push Notification"){
-          steps{
-            echo 'Pushing Notifications to Dev Branch'
+      steps{
+        echo 'Pushing Notifications to Dev Branch'
 
-          } 
+      } 
     }
 
 }
