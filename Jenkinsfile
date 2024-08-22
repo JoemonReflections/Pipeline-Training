@@ -44,6 +44,15 @@ pipeline {
 
       } 
     }
+    stage ("Building Application"){
+      steps{
+        echo 'Checking Interval to Dev Branch'
+        nodejs("Node"){
+          sh 'npm install'
+        }
+
+      } 
+    }
 
 }
 }
