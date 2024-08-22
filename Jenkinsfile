@@ -34,7 +34,7 @@ pipeline {
     }
     stage ("Push Notification"){
           steps{
-            echo 'Pushing Noti to Dev Branch'
+            echo 'Pushing Notification to Dev Branch'
 
           } 
     }
