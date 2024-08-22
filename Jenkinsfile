@@ -38,6 +38,12 @@ pipeline {
 
       } 
     }
+    stage ("Checking Interval"){
+      steps{
+        echo 'Checking Interval to Dev Branch'
+
+      } 
+    }
 
 }
 }
