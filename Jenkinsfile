@@ -58,9 +58,6 @@ pipeline {
     stage ("Building Gradle"){
       steps{
         echo 'Gradle '
-        withGradle(){
-          sh './gradlew -v'
-        }
       } 
     }
 
