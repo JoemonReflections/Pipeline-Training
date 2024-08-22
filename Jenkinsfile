@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools{
+    gradle 'Gradle'
+  }
   stages {
     stage ("Checkout"){
       steps{
@@ -46,11 +49,16 @@ pipeline {
     }
     stage ("Building Application"){
       steps{
-        echo 'Checking Interval to Dev Branch'
+        echo 'Node npm install'
         nodejs("Node"){
           sh 'npm install'
         }
-
+      } 
+    }
+    stage ("Building Gradle"){
+      steps{
+        echo 'Gradle '
+        sh './gradlew -v'
       } 
     }
 
