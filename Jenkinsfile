@@ -80,7 +80,7 @@ pipeline {
         }
       }
       steps{
-        echo 'Building Dev Branch ${NERS}'
+        echo "Building Dev Branch ${NERS}"
       } 
     }
 
