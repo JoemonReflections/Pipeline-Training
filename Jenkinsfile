@@ -87,19 +87,19 @@ pipeline {
     stage ("Loading Grrovy"){
       steps{
         script{
-          gv ="load script.groovy"
+          gv = load "script.groovy"
         }
         
       } 
     }
-    stage ("Running Grrovy"){
-      steps{
-        script{
-          gv.call()
+    stage("deploy") {
+            steps {
+                script {
+                    gv.call()
+                }
+            }
         }
-        
-      } 
-    }
+
 
 }
 }
