@@ -1,3 +1,4 @@
+import gv
 pipeline {
   agent any
   tools{
@@ -81,6 +82,16 @@ pipeline {
       }
       steps{
         echo "Building Dev Branch ${VERS}"
+      } 
+    }
+    stage ("Loading Grrovy"){
+      steps{
+        gv =load(script.groovy)
+      } 
+    }
+    stage ("Running Grrovy"){
+      steps{
+        gv.build()
       } 
     }
 
