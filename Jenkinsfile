@@ -60,6 +60,26 @@ pipeline {
         echo 'Gradle '
       } 
     }
+    stage ("Building Master"){
+      when{
+        expression{
+          BRANCH_NAME=="master"
+        }
+      }
+      steps{
+        echo 'Building Master Branch'
+      } 
+    }
+    stage ("Building Dev Branch"){
+      when{
+        expression{
+          BRANCH_NAME=="dev"
+        }
+      }
+      steps{
+        echo 'Building Dev Branch'
+      } 
+    }
 
 }
 }
