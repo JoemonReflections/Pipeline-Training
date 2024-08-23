@@ -95,7 +95,7 @@ pipeline {
     stage ("Running Grrovy"){
       steps{
         script{
-          gv.build()
+          gv.call()
         }
         
       } 

@@ -1,4 +1,4 @@
-def build(){
+def call() {
     echo "Building Groovy Application"
 }
 
