@@ -86,7 +86,7 @@ pipeline {
     }
     stage ("Loading Grrovy"){
       steps{
-        gv =load(script.groovy)
+        gv ="load script.groovy"
       } 
     }
     stage ("Running Grrovy"){
