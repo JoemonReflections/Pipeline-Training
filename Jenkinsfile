@@ -3,6 +3,9 @@ pipeline {
   tools{
     gradle 'Gradle'
   }
+  enviornment{
+    VERS="1.1.1"
+  }
   stages {
     stage ("Checkout"){
       steps{
@@ -77,7 +80,7 @@ pipeline {
         }
       }
       steps{
-        echo 'Building Dev Branch'
+        echo 'Building Dev Branch ${NERS}'
       } 
     }
 
