@@ -3,7 +3,7 @@ pipeline {
   tools{
     gradle 'Gradle'
   }
-  enviornment{
+  environment{
     VERS="1.1.1"
   }
   stages {
