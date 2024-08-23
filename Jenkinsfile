@@ -1,4 +1,4 @@
-import gv
+def gv
 pipeline {
   agent any
   tools{
@@ -91,7 +91,10 @@ pipeline {
     }
     stage ("Running Grrovy"){
       steps{
-        gv.build()
+        script{
+          gv.build()
+        }
+        
       } 
     }
 
